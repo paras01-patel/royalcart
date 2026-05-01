@@ -7,10 +7,9 @@
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- 🔥 Google Font (Royal Look) -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
     <style>
         body {
             background-color: #f8f9fa;
@@ -31,6 +30,22 @@
         .nav-link:hover {
             color: gold !important;
         }
+
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -39,7 +54,7 @@
 <!-- 🔥 NAVBAR START -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="/">RoyalCart </a>
+    <a class="navbar-brand fw-bold" href="{% url 'home' %}">RoyalCart</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
@@ -49,20 +64,34 @@
       <ul class="navbar-nav ms-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/shop/">Shop</a>
+          <a class="nav-link" href="{% url 'shop' %}">Shop</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/cart/">Cart</a>
+          <a class="nav-link" href="{% url 'cart' %}">Cart</a>
+        </li>
+
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="#">Welcome, {{ user.username }}</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/contact/">Sign Up</a>
+          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
         </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+        {% endif %}
 
       </ul>
     </div>
@@ -71,9 +100,29 @@
 <!-- 🔥 NAVBAR END -->
 
 
+<!-- 🔥 MAIN CONTENT -->
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+<!-- 🔥 FOOTER START -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-1">© 2026 RoyalCart | All Rights Reserved</p>
+        <p>
+            <a href="{% url 'home' %}">Home</a> |
+            <a href="{% url 'shop' %}">Shop</a> |
+            <a href="{% url 'contact' %}">Contact</a>
+        </p>
+    </div>
+</footer>
+<!-- 🔥 FOOTER END -->
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html> 
+</html>
