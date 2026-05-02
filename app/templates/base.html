@@ -31,20 +31,32 @@
             color: gold !important;
         }
 
+        /* 🔥 NEW FOOTER STYLE */
         footer {
             background: #000;
             color: #fff;
-            padding: 20px 0;
+            padding-top: 40px;
+            padding-bottom: 20px;
             margin-top: 50px;
         }
 
-        footer a {
+        footer h5 {
             color: gold;
+        }
+
+        footer a {
+            color: #fff;
             text-decoration: none;
+            transition: 0.3s;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            color: gold;
+            padding-left: 5px;
+        }
+
+        footer hr {
+            border-color: #444;
         }
     </style>
 </head>
@@ -54,7 +66,7 @@
 <!-- 🔥 NAVBAR START -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="{% url 'home' %}">RoyalCart</a>
+    <a class="navbar-brand fw-bold" href="">RoyalCart</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
@@ -64,34 +76,32 @@
       <ul class="navbar-nav ms-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Home</a>
+          <a class="nav-link" href="">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'shop' %}">Shop</a>
+          <a class="nav-link" href="">Shop</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'cart' %}">Cart</a>
-        </li>
-
-        {% if user.is_authenticated %}
-        <li class="nav-item">
-          <a class="nav-link" href="#">Welcome, {{ user.username }}</a>
+          <a class="nav-link" href="">Cart</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-        </li>
-        {% else %}
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+          <a class="nav-link" href="#">Welcome, </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'login' %}">Login</a>
+          <a class="nav-link" href="">Logout</a>
         </li>
-        {% endif %}
+
+        <li class="nav-item">
+          <a class="nav-link" href="">Sign Up</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="">Login</a>
+        </li>
 
       </ul>
     </div>
@@ -107,15 +117,43 @@
 </div>
 
 
-<!-- 🔥 FOOTER START -->
-<footer class="text-center">
+<!-- 🔥 IMPROVED FOOTER -->
+<footer>
     <div class="container">
-        <p class="mb-1">© 2026 RoyalCart | All Rights Reserved</p>
-        <p>
-            <a href="{% url 'home' %}">Home</a> |
-            <a href="{% url 'shop' %}">Shop</a> |
-            <a href="{% url 'contact' %}">Contact</a>
-        </p>
+        <div class="row">
+
+            <!-- Brand -->
+            <div class="col-md-4 mb-3">
+                <h4 class="fw-bold">RoyalCart</h4>
+                <p>Premium shopping experience with best quality products.</p>
+            </div>
+
+            <!-- Links -->
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Cart</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-3">
+                <h5>Contact</h5>
+                <p>Email: support@royalcart.com</p>
+                <p>Phone: +91 9876543210</p>
+                <p>India</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+            <p class="mb-0">© 2026 RoyalCart | All Rights Reserved</p>
+        </div>
     </div>
 </footer>
 <!-- 🔥 FOOTER END -->
