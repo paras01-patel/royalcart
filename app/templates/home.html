@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- 🔥 HERO SECTION -->
+<div class="p-5 mb-4 bg-dark text-white rounded">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold">Welcome to RoyalCart</h1>
+        <p>Best deals on Electronics, Fashion & More</p>
+        <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+    </div>
+</div>
+
+<!-- 📂 CATEGORIES -->
+<div class="container mb-5">
+    <h3 class="mb-4">Shop by Category</h3>
+    <div class="row text-center">
+
+        <div class="col-md-3">
+            <div class="card p-3 shadow-sm">
+                <h5>Men</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-3 shadow-sm">
+                <h5>Women</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-3 shadow-sm">
+                <h5>Electronics</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-3 shadow-sm">
+                <h5>Jewellery</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🛒 FEATURED PRODUCTS -->
+<div class="container mb-5">
+    <h3 class="mb-4">Featured Products</h3>
+
+    <div class="row">
+
+        <!-- Product 1 -->
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Product Name</h6>
+                    <p class="text-success">₹999</p>
+                    <button class="btn btn-warning btn-sm">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Product Name</h6>
+                    <p class="text-success">₹799</p>
+                    <button class="btn btn-warning btn-sm">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Product Name</h6>
+                    <p class="text-success">₹499</p>
+                    <button class="btn btn-warning btn-sm">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Product Name</h6>
+                    <p class="text-success">₹1299</p>
+                    <button class="btn btn-warning btn-sm">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🎯 OFFERS SECTION -->
+<div class="container mb-5">
+    <div class="p-4 bg-warning text-center rounded">
+        <h4>🔥 Special Offer</h4>
+        <p>Flat 50% OFF on selected items</p>
+    </div>
+</div>
+
+{% endblock %}
