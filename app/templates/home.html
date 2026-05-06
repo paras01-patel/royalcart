@@ -4,110 +4,135 @@
 
 {% block content %}
 
-<!-- 🔥 HERO SECTION -->
-<div class="p-5 mb-4 bg-dark text-white rounded">
+<!-- 🔥 HERO SECTION (E-COMMERCE STYLE) -->
+<div class="p-5 mb-4 text-white rounded" style="background: linear-gradient(135deg,#0A1F44,#1E3A8A);">
     <div class="container text-center">
-        <h1 class="display-5 fw-bold">Welcome to RoyalCart</h1>
-        <p>Best deals on Electronics, Fashion & More</p>
-        <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+        <h1 class="display-4 fw-bold">Big Sale is Live 🔥</h1>
+        <p class="lead">Up to 70% OFF on Electronics, Fashion & More</p>
+        <a href="/shop" class="btn btn-warning btn-lg px-4">Shop Now</a>
     </div>
+</div>
+
+<!-- 🔍 SEARCH + FILTER BAR -->
+<div class="container mb-4">
+    <form class="row g-2">
+        <div class="col-md-8">
+            <input class="form-control" type="search" placeholder="Search for products...">
+        </div>
+        <div class="col-md-2">
+            <select class="form-select">
+                <option>All Categories</option>
+                {% for cat in categories %}
+                <option>{{ cat.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-dark w-100">Search</button>
+        </div>
+    </form>
 </div>
 
 <!-- 📂 CATEGORIES -->
 <div class="container mb-5">
     <h3 class="mb-4">Shop by Category</h3>
+    <div class="row text-center g-3">
+
+        {% for cat in categories %}
+        <div class="col-md-3">
+            <a href="/category/{{ cat.id }}" style="text-decoration:none; color:black;">
+                <div class="card p-4 shadow-sm h-100 hover-card">
+                    <h5>{{ cat.name }}</h5>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+<!-- 🛒 PRODUCTS GRID -->
+<div class="container mb-5">
+    <h3 class="mb-4">Latest Products</h3>
+
+    <div class="row g-4">
+
+        {% for product in products %}
+        <div class="col-md-3">
+            <div class="card shadow-sm h-100 product-card">
+                <img src="{{ product.image.url }}" class="card-img-top" style="height:220px; object-fit:cover;">
+                <div class="card-body text-center">
+                    <h6>{{ product.name }}</h6>
+
+                    <!-- PRICE + DISCOUNT -->
+                    <p>
+                        <span class="text-success fw-bold">₹{{ product.price }}</span><br>
+                        {% if product.old_price %}
+                        <small class="text-muted text-decoration-line-through">₹{{ product.old_price }}</small>
+                        {% endif %}
+                    </p>
+
+                    <!-- ACTION BUTTONS -->
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="/add-to-cart/{{ product.id }}" class="btn btn-warning btn-sm">Add</a>
+                        <a href="/product/{{ product.id }}" class="btn btn-outline-dark btn-sm">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+<!-- 🎯 FLASH SALE -->
+<div class="container mb-5">
+    <div class="p-4 text-center rounded" style="background:#FF4C4C; color:white;">
+        <h4>⚡ Flash Sale</h4>
+        <p>Limited Time Offer – Hurry Up!</p>
+    </div>
+</div>
+
+<!-- ⭐ TRUST SECTION -->
+<div class="container mb-5">
     <div class="row text-center">
-
-        <div class="col-md-3">
-            <div class="card p-3 shadow-sm">
-                <h5>Men</h5>
-            </div>
+        <div class="col-md-4">
+            <h5>🚚 Free Delivery</h5>
+            <p>On orders above ₹499</p>
         </div>
-
-        <div class="col-md-3">
-            <div class="card p-3 shadow-sm">
-                <h5>Women</h5>
-            </div>
+        <div class="col-md-4">
+            <h5>🔄 Easy Returns</h5>
+            <p>7 days return policy</p>
         </div>
-
-        <div class="col-md-3">
-            <div class="card p-3 shadow-sm">
-                <h5>Electronics</h5>
-            </div>
+        <div class="col-md-4">
+            <h5>💳 Secure Payment</h5>
+            <p>100% secure checkout</p>
         </div>
-
-        <div class="col-md-3">
-            <div class="card p-3 shadow-sm">
-                <h5>Jewellery</h5>
-            </div>
-        </div>
-
     </div>
 </div>
 
-<!-- 🛒 FEATURED PRODUCTS -->
+<!-- 📩 NEWSLETTER -->
 <div class="container mb-5">
-    <h3 class="mb-4">Featured Products</h3>
-
-    <div class="row">
-
-        <!-- Product 1 -->
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/300" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Product Name</h6>
-                    <p class="text-success">₹999</p>
-                    <button class="btn btn-warning btn-sm">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/300" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Product Name</h6>
-                    <p class="text-success">₹799</p>
-                    <button class="btn btn-warning btn-sm">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/300" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Product Name</h6>
-                    <p class="text-success">₹499</p>
-                    <button class="btn btn-warning btn-sm">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/300" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Product Name</h6>
-                    <p class="text-success">₹1299</p>
-                    <button class="btn btn-warning btn-sm">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
+    <div class="p-5 bg-light text-center rounded">
+        <h4>Get Exclusive Deals</h4>
+        <p>Subscribe & never miss an offer</p>
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+            <button class="btn btn-dark">Subscribe</button>
+        </form>
     </div>
 </div>
 
-<!-- 🎯 OFFERS SECTION -->
-<div class="container mb-5">
-    <div class="p-4 bg-warning text-center rounded">
-        <h4>🔥 Special Offer</h4>
-        <p>Flat 50% OFF on selected items</p>
-    </div>
-</div>
+<!-- 🎨 CSS -->
+<style>
+.hover-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+</style>
 
 {% endblock %}
