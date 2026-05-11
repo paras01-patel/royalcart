@@ -1,65 +1,316 @@
-<!-- ================================= -->
-<!-- 🛒 ECOMMERCE EXTRA PREMIUM SECTION -->
-<!-- ADD BELOW PRODUCTS SECTION -->
-<!-- ================================= -->
+{% extends 'base.html' %}
 
-<!-- 🔥 DEAL OF THE DAY -->
-<section class="deal-section py-5">
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- =========================
+        HERO SECTION
+========================= -->
+
+<section class="hero-home rounded-4 overflow-hidden mb-5">
 
     <div class="container">
 
-        <div class="deal-box">
+        <div class="row align-items-center min-vh-75">
 
-            <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
 
-                <div class="col-lg-6 text-white">
+                <span class="badge bg-warning text-dark px-4 py-2 mb-4">
+                    BIG SALE 2026
+                </span>
 
-                    <span class="deal-badge">
-                        ⚡ DEAL OF THE DAY
-                    </span>
+                <h1 class="display-3 fw-bold mb-4">
+                    Upgrade Your Style
+                    With RoyalCart
+                </h1>
 
-                    <h1 class="fw-bold display-4 mt-4">
-                        Smart Watch Collection
-                    </h1>
+                <p class="lead mb-4">
+                    Discover premium fashion, electronics,
+                    gadgets and lifestyle products at the
+                    best prices.
+                </p>
 
-                    <p class="lead mt-3">
-                        Premium smart watches with modern features,
-                        stylish look & massive discounts.
-                    </p>
+                <div class="d-flex gap-3 flex-wrap">
 
-                    <!-- COUNTDOWN -->
-                    <div class="deal-timer mt-4">
-
-                        <div class="timer-item">
-                            <h3>12</h3>
-                            <small>Hours</small>
-                        </div>
-
-                        <div class="timer-item">
-                            <h3>45</h3>
-                            <small>Minutes</small>
-                        </div>
-
-                        <div class="timer-item">
-                            <h3>22</h3>
-                            <small>Seconds</small>
-                        </div>
-
-                    </div>
-
-                    <a href="/shop"
-                       class="btn btn-warning btn-lg px-5 mt-4 fw-bold rounded-pill">
+                    <a href="#"
+                       class="btn btn-warning btn-lg px-4 py-3 fw-bold rounded-pill">
 
                         Shop Now
+
+                    </a>
+
+                    <a href="#"
+                       class="btn btn-light btn-lg px-4 py-3 fw-bold rounded-pill">
+
+                        Explore Deals
+
                     </a>
 
                 </div>
 
-                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            </div>
 
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200"
-                         class="img-fluid deal-img"
-                         alt="watch">
+            <div class="col-lg-6 text-center">
+
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop"
+                     class="img-fluid hero-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        CATEGORIES
+========================= -->
+
+<section class="mb-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <h2 class="fw-bold">Top Categories</h2>
+            <p class="text-muted">Explore trending categories</p>
+
+        </div>
+
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="category-card">
+
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop">
+
+                <div class="category-overlay">
+                    <h4>Fashion</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="category-card">
+
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000&auto=format&fit=crop">
+
+                <div class="category-overlay">
+                    <h4>Mobiles</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="category-card">
+
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop">
+
+                <div class="category-overlay">
+                    <h4>Electronics</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="category-card">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop">
+
+                <div class="category-overlay">
+                    <h4>Shoes</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        TRENDING PRODUCTS
+========================= -->
+
+<section class="mb-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <h2 class="fw-bold">Trending Products</h2>
+            <p class="text-muted">Best selling products this week</p>
+
+        </div>
+
+        <a href="#" class="btn btn-dark rounded-pill px-4">
+            View All
+        </a>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- PRODUCT 1 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop">
+
+                    <span class="sale-badge">
+                        SALE
+                    </span>
+
+                </div>
+
+                <div class="p-3">
+
+                    <h5>Nike Shoes</h5>
+
+                    <div class="mb-2 text-warning">
+                        ★★★★★
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <h4 class="fw-bold mb-0">
+                            ₹2,999
+                        </h4>
+
+                        <button class="btn btn-warning rounded-pill px-3">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000&auto=format&fit=crop">
+
+                </div>
+
+                <div class="p-3">
+
+                    <h5>iPhone</h5>
+
+                    <div class="mb-2 text-warning">
+                        ★★★★★
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <h4 class="fw-bold mb-0">
+                            ₹79,999
+                        </h4>
+
+                        <button class="btn btn-warning rounded-pill px-3">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop">
+
+                </div>
+
+                <div class="p-3">
+
+                    <h5>Headphones</h5>
+
+                    <div class="mb-2 text-warning">
+                        ★★★★☆
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <h4 class="fw-bold mb-0">
+                            ₹4,999
+                        </h4>
+
+                        <button class="btn btn-warning rounded-pill px-3">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <div class="product-img">
+
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop">
+
+                </div>
+
+                <div class="p-3">
+
+                    <h5>Smart Watch</h5>
+
+                    <div class="mb-2 text-warning">
+                        ★★★★★
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <h4 class="fw-bold mb-0">
+                            ₹6,999
+                        </h4>
+
+                        <button class="btn btn-warning rounded-pill px-3">
+                            Add
+                        </button>
+
+                    </div>
 
                 </div>
 
@@ -71,235 +322,40 @@
 
 </section>
 
-<!-- ================================= -->
-<!-- 🏷️ SHOP BY BRANDS -->
-<!-- ================================= -->
+<!-- =========================
+        BIG OFFER
+========================= -->
 
-<section class="py-5 bg-white">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <h2 class="fw-bold section-title-center">
-                Shop By Brands
-            </h2>
-
-            <p class="text-muted">
-                Top premium brands available on RoyalCart
-            </p>
-
-        </div>
-
-        <div class="row g-4 text-center">
-
-            <div class="col-6 col-md-2">
-                <div class="brand-card">NIKE</div>
-            </div>
-
-            <div class="col-6 col-md-2">
-                <div class="brand-card">APPLE</div>
-            </div>
-
-            <div class="col-6 col-md-2">
-                <div class="brand-card">SONY</div>
-            </div>
-
-            <div class="col-6 col-md-2">
-                <div class="brand-card">PUMA</div>
-            </div>
-
-            <div class="col-6 col-md-2">
-                <div class="brand-card">SAMSUNG</div>
-            </div>
-
-            <div class="col-6 col-md-2">
-                <div class="brand-card">ADIDAS</div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================================= -->
-<!-- ⭐ BEST SELLERS -->
-<!-- ================================= -->
-
-<section class="best-seller py-5">
+<section class="offer-section rounded-4 overflow-hidden">
 
     <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center mb-5">
+        <div class="row align-items-center">
 
-            <div>
+            <div class="col-lg-6 text-white">
 
-                <h2 class="fw-bold section-title">
-                    Best Sellers
+                <h2 class="display-5 fw-bold mb-4">
+                    Mega Discount
+                    Up To 70% OFF
                 </h2>
 
-                <p class="text-muted">
-                    Most purchased products
+                <p class="mb-4">
+                    Grab the best deals before the sale ends.
                 </p>
 
-            </div>
+                <a href="#"
+                   class="btn btn-warning btn-lg rounded-pill px-4">
 
-            <a href="/shop"
-               class="btn btn-outline-dark rounded-pill px-4">
+                    Shop Deals
 
-                View All
-            </a>
-
-        </div>
-
-        <div class="row g-4">
-
-            {% for product in products|slice:":4" %}
-            <div class="col-md-3">
-
-                <div class="best-card">
-
-                    <div class="best-image">
-
-                        <img src="{{ product.image.url }}"
-                             class="img-fluid"
-                             alt="{{ product.name }}">
-
-                        <span class="best-badge">
-                            HOT
-                        </span>
-
-                    </div>
-
-                    <div class="p-3">
-
-                        <small class="text-muted">
-                            Best Seller
-                        </small>
-
-                        <h5 class="fw-bold mt-2">
-                            {{ product.name }}
-                        </h5>
-
-                        <div class="text-warning mb-2">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center">
-
-                            <span class="fw-bold text-success fs-5">
-                                ₹{{ product.price }}
-                            </span>
-
-                            <a href="/add-to-cart/{{ product.id }}"
-                               class="btn btn-warning rounded-pill px-3">
-
-                                Add
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-            {% endfor %}
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================================= -->
-<!-- 🚚 SERVICES -->
-<!-- ================================= -->
-
-<section class="service-section py-5">
-
-    <div class="container">
-
-        <div class="row g-4 text-center">
-
-            <div class="col-md-3">
-
-                <div class="service-box">
-
-                    <div class="service-icon">
-                        🚚
-                    </div>
-
-                    <h5 class="fw-bold mt-3">
-                        Free Shipping
-                    </h5>
-
-                    <p class="text-muted">
-                        On all orders above ₹999
-                    </p>
-
-                </div>
+                </a>
 
             </div>
 
-            <div class="col-md-3">
+            <div class="col-lg-6 text-center">
 
-                <div class="service-box">
-
-                    <div class="service-icon">
-                        🔄
-                    </div>
-
-                    <h5 class="fw-bold mt-3">
-                        Easy Returns
-                    </h5>
-
-                    <p class="text-muted">
-                        7 days easy return policy
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="service-box">
-
-                    <div class="service-icon">
-                        💳
-                    </div>
-
-                    <h5 class="fw-bold mt-3">
-                        Secure Payment
-                    </h5>
-
-                    <p class="text-muted">
-                        100% secure checkout
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="service-box">
-
-                    <div class="service-icon">
-                        📞
-                    </div>
-
-                    <h5 class="fw-bold mt-3">
-                        24/7 Support
-                    </h5>
-
-                    <p class="text-muted">
-                        Dedicated support team
-                    </p>
-
-                </div>
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop"
+                     class="img-fluid offer-img">
 
             </div>
 
@@ -308,173 +364,112 @@
     </div>
 
 </section>
-
-<!-- ================================= -->
-<!-- 🎨 PREMIUM CSS -->
-<!-- ================================= -->
 
 <style>
 
-/* DEAL SECTION */
-.deal-box{
-    background:linear-gradient(135deg,#111827,#1E3A8A);
-    border-radius:35px;
-    padding:70px;
-    overflow:hidden;
-    position:relative;
-}
-
-.deal-box::before{
-    content:'';
-    position:absolute;
-    width:350px;
-    height:350px;
-    background:rgba(255,255,255,0.08);
-    border-radius:50%;
-    top:-100px;
-    right:-100px;
-}
-
-.deal-badge{
-    background:rgba(255,255,255,0.15);
-    padding:10px 20px;
-    border-radius:30px;
-    backdrop-filter:blur(10px);
-}
-
-.deal-img{
-    max-width:420px;
-    border-radius:25px;
-    animation:float 3s ease-in-out infinite;
-}
-
-.deal-timer{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.timer-item{
-    background:rgba(255,255,255,0.12);
-    padding:18px 25px;
-    border-radius:18px;
-    text-align:center;
-    min-width:100px;
-}
-
-/* BRANDS */
-.brand-card{
-    background:#fff;
-    padding:30px 20px;
-    border-radius:20px;
-    font-weight:bold;
-    font-size:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.4s;
-}
-
-.brand-card:hover{
-    transform:translateY(-10px);
-    background:#111827;
-    color:white;
-}
-
-/* BEST SELLER */
-.best-card{
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    transition:0.4s;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.best-card:hover{
-    transform:translateY(-10px);
-}
-
-.best-image{
-    position:relative;
-    overflow:hidden;
-}
-
-.best-image img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    transition:0.5s;
-}
-
-.best-card:hover img{
-    transform:scale(1.08);
-}
-
-.best-badge{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:#FF4D4D;
-    color:white;
-    padding:6px 14px;
-    border-radius:30px;
-    font-size:12px;
-    font-weight:bold;
-}
-
-/* SERVICES */
-.service-box{
-    background:white;
-    padding:40px 25px;
-    border-radius:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.06);
-    transition:0.4s;
-}
-
-.service-box:hover{
-    transform:translateY(-10px);
-}
-
-.service-icon{
-    width:80px;
-    height:80px;
-    margin:auto;
-    border-radius:50%;
-    background:#FFF4D6;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:35px;
-}
-
-/* TITLE */
-.section-title-center{
-    position:relative;
-    display:inline-block;
-}
-
-.section-title-center::after{
-    content:'';
-    width:60px;
-    height:4px;
-    background:#FFC107;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-12px;
-    border-radius:10px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-    .deal-box{
-        padding:40px 25px;
-        text-align:center;
+    .hero-home{
+        background:linear-gradient(
+            135deg,
+            #0A1F44,
+            #1E3A8A
+        );
+        padding:80px 0;
     }
 
-    .deal-timer{
-        justify-content:center;
+    .hero-image{
+        max-height:500px;
+        border-radius:25px;
+        box-shadow:0 15px 40px rgba(0,0,0,0.2);
     }
 
-}
+    .category-card{
+        position:relative;
+        overflow:hidden;
+        border-radius:20px;
+        cursor:pointer;
+        height:300px;
+    }
+
+    .category-card img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        transition:0.5s;
+    }
+
+    .category-card:hover img{
+        transform:scale(1.1);
+    }
+
+    .category-overlay{
+        position:absolute;
+        inset:0;
+        background:linear-gradient(
+            transparent,
+            rgba(0,0,0,0.8)
+        );
+        display:flex;
+        align-items:end;
+        padding:20px;
+        color:white;
+    }
+
+    .product-card{
+        background:white;
+        border-radius:20px;
+        overflow:hidden;
+        transition:0.4s;
+        box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .product-card:hover{
+        transform:translateY(-8px);
+    }
+
+    .product-img{
+        position:relative;
+        overflow:hidden;
+        height:250px;
+    }
+
+    .product-img img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        transition:0.5s;
+    }
+
+    .product-card:hover img{
+        transform:scale(1.08);
+    }
+
+    .sale-badge{
+        position:absolute;
+        top:15px;
+        left:15px;
+        background:red;
+        color:white;
+        padding:6px 12px;
+        border-radius:30px;
+        font-size:12px;
+        font-weight:600;
+    }
+
+    .offer-section{
+        background:linear-gradient(
+            135deg,
+            #111827,
+            #1F2937
+        );
+        padding:70px 0;
+        margin-bottom:40px;
+    }
+
+    .offer-img{
+        border-radius:25px;
+        max-height:400px;
+    }
 
 </style>
+
+{% endblock %}
