@@ -4,20 +4,21 @@
 
 {% block content %}
 
-<!-- ============================= -->
-<!-- 🔥 PREMIUM PRODUCT PAGE -->
-<!-- ============================= -->
+<!-- ================================= -->
+<!-- 🔥 PREMIUM MODERN PRODUCT PAGE -->
+<!-- ================================= -->
 
 <section class="product-page py-5">
 
     <div class="container">
 
-        <!-- ================= HERO ================= -->
-        <div class="product-hero text-white p-5 rounded-4 mb-5">
+        <!-- ================= HERO SECTION ================= -->
 
-            <div class="row align-items-center">
+        <div class="product-hero rounded-4 overflow-hidden mb-5">
 
-                <div class="col-lg-6">
+            <div class="row align-items-center g-0">
+
+                <div class="col-lg-6 p-5 text-white">
 
                     <span class="badge bg-warning text-dark px-3 py-2 mb-3">
                         New Collection 2026
@@ -27,22 +28,107 @@
                         Discover Amazing Products
                     </h1>
 
-                    <p class="lead text-light mb-4">
+                    <p class="lead mb-4">
                         Shop Electronics, Fashion, Shoes & Accessories
                         with premium quality and best prices.
                     </p>
 
-                    <button class="btn btn-light btn-lg px-4 fw-bold">
-                        Shop Now
-                    </button>
+                    <div class="d-flex gap-3 flex-wrap">
+
+                        <button class="btn btn-light btn-lg px-4 rounded-pill fw-bold">
+                            Shop Now
+                        </button>
+
+                        <button class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                            Explore
+                        </button>
+
+                    </div>
 
                 </div>
 
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6">
 
                     <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1200"
-                         class="img-fluid rounded-4 shadow-lg"
-                         style="max-height:350px; object-fit:cover;">
+                         class="img-fluid hero-img">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= FEATURES ================= -->
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-box text-center">
+
+                    <i class="bi bi-truck fs-1"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        Free Shipping
+                    </h5>
+
+                    <p class="text-muted small mb-0">
+                        Free delivery on all orders
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-box text-center">
+
+                    <i class="bi bi-shield-check fs-1"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        Secure Payment
+                    </h5>
+
+                    <p class="text-muted small mb-0">
+                        100% secure payment methods
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-box text-center">
+
+                    <i class="bi bi-arrow-repeat fs-1"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        Easy Returns
+                    </h5>
+
+                    <p class="text-muted small mb-0">
+                        7 days easy return policy
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-box text-center">
+
+                    <i class="bi bi-headset fs-1"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        24/7 Support
+                    </h5>
+
+                    <p class="text-muted small mb-0">
+                        Dedicated support team
+                    </p>
 
                 </div>
 
@@ -52,44 +138,49 @@
 
         <!-- ================= FILTERS ================= -->
 
-        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-5">
+        <div class="filter-box mb-5">
 
-            <div class="d-flex gap-2 flex-wrap">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
 
-                <button class="btn btn-dark px-4 rounded-pill">
-                    All
-                </button>
+                <div class="d-flex gap-2 flex-wrap">
 
-                <button class="btn btn-outline-dark rounded-pill px-4">
-                    Electronics
-                </button>
+                    <button class="btn btn-dark rounded-pill px-4">
+                        All
+                    </button>
 
-                <button class="btn btn-outline-dark rounded-pill px-4">
-                    Fashion
-                </button>
+                    <button class="btn btn-outline-dark rounded-pill px-4">
+                        Electronics
+                    </button>
 
-                <button class="btn btn-outline-dark rounded-pill px-4">
-                    Shoes
-                </button>
+                    <button class="btn btn-outline-dark rounded-pill px-4">
+                        Fashion
+                    </button>
 
-                <button class="btn btn-outline-dark rounded-pill px-4">
-                    Watches
-                </button>
+                    <button class="btn btn-outline-dark rounded-pill px-4">
+                        Shoes
+                    </button>
+
+                    <button class="btn btn-outline-dark rounded-pill px-4">
+                        Watches
+                    </button>
+
+                </div>
+
+                <!-- SEARCH -->
+
+                <form class="d-flex">
+
+                    <input type="search"
+                           class="form-control rounded-start-pill"
+                           placeholder="Search products...">
+
+                    <button class="btn btn-dark rounded-end-pill px-4">
+                        Search
+                    </button>
+
+                </form>
 
             </div>
-
-            <!-- SEARCH -->
-            <form class="d-flex">
-
-                <input type="search"
-                       class="form-control rounded-start-pill"
-                       placeholder="Search products...">
-
-                <button class="btn btn-dark rounded-end-pill px-4">
-                    Search
-                </button>
-
-            </form>
 
         </div>
 
@@ -97,15 +188,23 @@
 
         <div class="row g-4">
 
-            <!-- PRODUCT CARD -->
+            <!-- PRODUCT 1 -->
+
             <div class="col-lg-3 col-md-6">
 
-                <div class="card product-card border-0 shadow-sm h-100">
+                <div class="card product-card border-0 h-100">
 
-                    <div class="product-image overflow-hidden">
+                    <div class="product-image">
 
                         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800"
                              class="card-img-top">
+
+                        <div class="product-icons">
+
+                            <button><i class="bi bi-heart"></i></button>
+                            <button><i class="bi bi-eye"></i></button>
+
+                        </div>
 
                     </div>
 
@@ -122,6 +221,13 @@
                         <p class="text-muted small">
                             Latest Apple Smartphone
                         </p>
+
+                        <div class="mb-2">
+
+                            ⭐⭐⭐⭐⭐
+                            <small class="text-muted">(120 Reviews)</small>
+
+                        </div>
 
                         <div class="d-flex justify-content-between align-items-center">
 
@@ -146,14 +252,22 @@
             </div>
 
             <!-- PRODUCT 2 -->
+
             <div class="col-lg-3 col-md-6">
 
-                <div class="card product-card border-0 shadow-sm h-100">
+                <div class="card product-card border-0 h-100">
 
-                    <div class="product-image overflow-hidden">
+                    <div class="product-image">
 
                         <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800"
                              class="card-img-top">
+
+                        <div class="product-icons">
+
+                            <button><i class="bi bi-heart"></i></button>
+                            <button><i class="bi bi-eye"></i></button>
+
+                        </div>
 
                     </div>
 
@@ -170,6 +284,13 @@
                         <p class="text-muted small">
                             Stylish Cotton Wear
                         </p>
+
+                        <div class="mb-2">
+
+                            ⭐⭐⭐⭐☆
+                            <small class="text-muted">(85 Reviews)</small>
+
+                        </div>
 
                         <div class="d-flex justify-content-between align-items-center">
 
@@ -194,14 +315,22 @@
             </div>
 
             <!-- PRODUCT 3 -->
+
             <div class="col-lg-3 col-md-6">
 
-                <div class="card product-card border-0 shadow-sm h-100">
+                <div class="card product-card border-0 h-100">
 
-                    <div class="product-image overflow-hidden">
+                    <div class="product-image">
 
                         <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800"
                              class="card-img-top">
+
+                        <div class="product-icons">
+
+                            <button><i class="bi bi-heart"></i></button>
+                            <button><i class="bi bi-eye"></i></button>
+
+                        </div>
 
                     </div>
 
@@ -218,6 +347,13 @@
                         <p class="text-muted small">
                             Running & Casual Shoes
                         </p>
+
+                        <div class="mb-2">
+
+                            ⭐⭐⭐⭐⭐
+                            <small class="text-muted">(210 Reviews)</small>
+
+                        </div>
 
                         <div class="d-flex justify-content-between align-items-center">
 
@@ -242,14 +378,22 @@
             </div>
 
             <!-- PRODUCT 4 -->
+
             <div class="col-lg-3 col-md-6">
 
-                <div class="card product-card border-0 shadow-sm h-100">
+                <div class="card product-card border-0 h-100">
 
-                    <div class="product-image overflow-hidden">
+                    <div class="product-image">
 
                         <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=800"
                              class="card-img-top">
+
+                        <div class="product-icons">
+
+                            <button><i class="bi bi-heart"></i></button>
+                            <button><i class="bi bi-eye"></i></button>
+
+                        </div>
 
                     </div>
 
@@ -266,6 +410,13 @@
                         <p class="text-muted small">
                             Fitness & Health Tracker
                         </p>
+
+                        <div class="mb-2">
+
+                            ⭐⭐⭐⭐☆
+                            <small class="text-muted">(96 Reviews)</small>
+
+                        </div>
 
                         <div class="d-flex justify-content-between align-items-center">
 
@@ -291,13 +442,47 @@
 
         </div>
 
+        <!-- ================= NEWSLETTER ================= -->
+
+        <div class="newsletter-box mt-5 text-center text-white p-5 rounded-4">
+
+            <h2 class="fw-bold mb-3">
+                Subscribe Our Newsletter
+            </h2>
+
+            <p class="mb-4">
+                Get latest offers, discounts and updates
+            </p>
+
+            <form class="row justify-content-center g-2">
+
+                <div class="col-lg-4">
+
+                    <input type="email"
+                           class="form-control form-control-lg rounded-pill"
+                           placeholder="Enter your email">
+
+                </div>
+
+                <div class="col-auto">
+
+                    <button class="btn btn-warning btn-lg rounded-pill px-4 fw-bold">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
     </div>
 
 </section>
 
-<!-- ============================= -->
+<!-- ================================= -->
 <!-- CUSTOM CSS -->
-<!-- ============================= -->
+<!-- ================================= -->
 
 <style>
 
@@ -305,31 +490,100 @@
     background:#f5f7fb;
 }
 
+/* HERO */
+
 .product-hero{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    background:linear-gradient(135deg,#0f172a,#1e40af);
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
 
-.product-card{
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    min-height:400px;
+}
+
+/* FEATURES */
+
+.feature-box{
+    background:#fff;
+    padding:30px;
     border-radius:20px;
+    transition:0.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.feature-box:hover{
+    transform:translateY(-8px);
+}
+
+/* FILTER */
+
+.filter-box{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+    border-radius:25px;
     overflow:hidden;
     transition:0.4s;
+    background:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
 }
 
 .product-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 15px 35px rgba(0,0,0,0.15)!important;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.product-image{
+    position:relative;
+    overflow:hidden;
 }
 
 .product-image img{
-    height:260px;
     width:100%;
+    height:260px;
     object-fit:cover;
-    transition:0.4s;
+    transition:0.5s;
 }
 
 .product-card:hover img{
     transform:scale(1.08);
 }
+
+/* PRODUCT ICONS */
+
+.product-icons{
+    position:absolute;
+    top:15px;
+    right:-60px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    transition:0.4s;
+}
+
+.product-card:hover .product-icons{
+    right:15px;
+}
+
+.product-icons button{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
 
 .btn-dark{
     background:#111827;
@@ -338,6 +592,26 @@
 
 .btn-dark:hover{
     background:#000;
+}
+
+/* NEWSLETTER */
+
+.newsletter-box{
+    background:linear-gradient(135deg,#111827,#2563eb);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-img{
+        min-height:250px;
+    }
+
+    .product-hero{
+        text-align:center;
+    }
+
 }
 
 </style>
