@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+
+<!-- ========================= -->
+<!-- 🛍 PRODUCT PAGE -->
+<!-- ========================= -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <!-- HEADING -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-5">
+                Our Products
+            </h1>
+
+            <p class="text-muted">
+                Explore Trending Products & Best Deals
+            </p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+
+            <button class="btn btn-dark px-4">
+                All
+            </button>
+
+            <button class="btn btn-outline-dark px-4">
+                Electronics
+            </button>
+
+            <button class="btn btn-outline-dark px-4">
+                Fashion
+            </button>
+
+            <button class="btn btn-outline-dark px-4">
+                Shoes
+            </button>
+
+            <button class="btn btn-outline-dark px-4">
+                Watches
+            </button>
+
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="row g-4">
+
+            <!-- PRODUCT 1 -->
+            <div class="col-md-3">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800"
+                         class="card-img-top"
+                         style="height:250px; object-fit:cover;">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+                            iPhone 15
+                        </h5>
+
+                        <p class="text-muted small">
+                            Latest Apple Smartphone
+                        </p>
+
+                        <h4 class="text-primary fw-bold">
+                            ₹79,999
+                        </h4>
+
+                        <button class="btn btn-dark w-100 mt-3">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="col-md-3">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800"
+                         class="card-img-top"
+                         style="height:250px; object-fit:cover;">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+                            Stylish T-Shirt
+                        </h5>
+
+                        <p class="text-muted small">
+                            Premium Cotton Wear
+                        </p>
+
+                        <h4 class="text-primary fw-bold">
+                            ₹999
+                        </h4>
+
+                        <button class="btn btn-dark w-100 mt-3">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="col-md-3">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800"
+                         class="card-img-top"
+                         style="height:250px; object-fit:cover;">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+                            Nike Shoes
+                        </h5>
+
+                        <p class="text-muted small">
+                            Comfortable Running Shoes
+                        </p>
+
+                        <h4 class="text-primary fw-bold">
+                            ₹4,999
+                        </h4>
+
+                        <button class="btn btn-dark w-100 mt-3">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="col-md-3">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=800"
+                         class="card-img-top"
+                         style="height:250px; object-fit:cover;">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+                            Smart Watch
+                        </h5>
+
+                        <p class="text-muted small">
+                            Fitness & Health Tracker
+                        </p>
+
+                        <h4 class="text-primary fw-bold">
+                            ₹2,499
+                        </h4>
+
+                        <button class="btn btn-dark w-100 mt-3">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

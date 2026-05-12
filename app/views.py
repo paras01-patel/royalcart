@@ -11,3 +11,6 @@ def login(request):
 def sign(request):
     return render(request,"sign.html")
 
+
+def man(request):
+    return render(request,"man.html")
