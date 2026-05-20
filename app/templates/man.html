@@ -13,41 +13,55 @@ Women Collection | RoyalCart
         background:#fff5f8;
     }
 
+    /* ================= SALE BAR ================= */
+
+    .sale-bar{
+        background:linear-gradient(90deg,#ff4f81,#d63384);
+        color:white;
+        text-align:center;
+        padding:15px;
+        border-radius:15px;
+        font-weight:600;
+        margin-bottom:35px;
+        letter-spacing:1px;
+    }
+
     /* ================= HERO ================= */
 
     .women-hero{
         background:
         linear-gradient(rgba(255,105,180,0.4), rgba(0,0,0,0.4)),
-        url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1600&auto=format&fit=crop');
+        url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1600&auto=format&fit=crop');
 
         background-size:cover;
         background-position:center;
-        min-height:500px;
+        min-height:550px;
         border-radius:25px;
         display:flex;
         align-items:center;
         padding:60px;
         color:white;
-        margin-bottom:70px;
+        margin-bottom:80px;
     }
 
     .women-hero h1{
-        font-size:65px;
+        font-size:70px;
         font-weight:700;
     }
 
     .women-hero p{
         font-size:20px;
-        margin:20px 0;
+        margin:25px 0;
+        max-width:650px;
         color:#f1f1f1;
-        max-width:600px;
+        line-height:1.8;
     }
 
     .btn-pink{
         background:#ff4f81;
         color:white;
         border:none;
-        padding:14px 32px;
+        padding:14px 34px;
         border-radius:12px;
         font-weight:600;
         transition:0.3s;
@@ -55,9 +69,19 @@ Women Collection | RoyalCart
 
     .btn-pink:hover{
         background:#d63384;
+        color:white;
     }
 
-    /* ================= COLLECTION SECTION ================= */
+    .btn-light-custom{
+        background:white;
+        color:#d63384;
+        border:none;
+        padding:14px 34px;
+        border-radius:12px;
+        font-weight:600;
+    }
+
+    /* ================= CATEGORY ================= */
 
     .collection-box{
         background:white;
@@ -69,7 +93,7 @@ Women Collection | RoyalCart
     }
 
     .collection-box:hover{
-        transform:translateY(-8px);
+        transform:translateY(-10px);
     }
 
     .collection-box img{
@@ -79,30 +103,31 @@ Women Collection | RoyalCart
     }
 
     .collection-content{
-        padding:20px;
+        padding:22px;
         text-align:center;
     }
 
     .collection-content h4{
         color:#d63384;
         font-weight:700;
+        margin-bottom:10px;
     }
 
-    /* ================= SECTION TITLE ================= */
+    /* ================= TITLE ================= */
 
     .section-title{
         text-align:center;
-        font-size:42px;
+        font-size:45px;
         font-weight:700;
-        margin:80px 0 50px;
         color:#d63384;
+        margin:90px 0 50px;
     }
 
-    /* ================= PRODUCT CARD ================= */
+    /* ================= PRODUCT ================= */
 
     .product-card{
         background:white;
-        border-radius:18px;
+        border-radius:20px;
         overflow:hidden;
         transition:0.3s;
         box-shadow:0 5px 20px rgba(0,0,0,0.08);
@@ -120,19 +145,19 @@ Women Collection | RoyalCart
     }
 
     .product-content{
-        padding:20px;
+        padding:22px;
     }
 
     .product-title{
         font-size:22px;
-        font-weight:600;
-        margin-bottom:10px;
+        font-weight:700;
         color:#333;
+        margin-bottom:12px;
     }
 
     .price{
         color:#ff4f81;
-        font-size:24px;
+        font-size:25px;
         font-weight:700;
     }
 
@@ -147,9 +172,9 @@ Women Collection | RoyalCart
         background:#ff4f81;
         color:white;
         border:none;
-        padding:12px;
+        padding:13px;
         border-radius:10px;
-        margin-top:15px;
+        margin-top:18px;
         font-weight:600;
         transition:0.3s;
     }
@@ -158,9 +183,9 @@ Women Collection | RoyalCart
         background:#d63384;
     }
 
-    /* ================= BEAUTY SECTION ================= */
+    /* ================= OFFER SECTION ================= */
 
-    .beauty-section{
+    .offer-section{
         margin-top:90px;
         background:white;
         border-radius:25px;
@@ -168,45 +193,99 @@ Women Collection | RoyalCart
         box-shadow:0 5px 20px rgba(0,0,0,0.08);
     }
 
-    .beauty-section img{
+    .offer-section img{
         width:100%;
         border-radius:20px;
     }
 
-    .beauty-content h2{
-        font-size:50px;
+    .offer-content h2{
         color:#d63384;
+        font-size:50px;
         font-weight:700;
     }
 
-    .beauty-content p{
-        margin:20px 0;
+    .offer-content p{
+        margin:25px 0;
         color:#555;
+        font-size:18px;
         line-height:1.8;
+    }
+
+    /* ================= NEWSLETTER ================= */
+
+    .newsletter{
+        margin-top:90px;
+        background:linear-gradient(90deg,#ff4f81,#d63384);
+        padding:70px 40px;
+        border-radius:25px;
+        text-align:center;
+        color:white;
+    }
+
+    .newsletter h2{
+        font-size:50px;
+        font-weight:700;
+    }
+
+    .newsletter p{
+        margin:20px 0 35px;
         font-size:18px;
     }
+
+    .newsletter input{
+        width:350px;
+        padding:15px;
+        border:none;
+        border-radius:12px;
+        outline:none;
+    }
+
+    /* ================= MOBILE ================= */
 
     @media(max-width:768px){
 
         .women-hero{
             padding:40px 25px;
+            min-height:450px;
         }
 
         .women-hero h1{
             font-size:42px;
         }
 
-        .beauty-section{
+        .women-hero p{
+            font-size:17px;
+        }
+
+        .offer-section{
             padding:30px;
         }
 
-        .beauty-content h2{
+        .offer-content h2{
             font-size:35px;
+        }
+
+        .newsletter{
+            padding:40px 20px;
+        }
+
+        .newsletter h2{
+            font-size:35px;
+        }
+
+        .newsletter input{
+            width:100%;
         }
 
     }
 
 </style>
+
+<!-- ================= SALE BAR ================= -->
+
+<div class="sale-bar">
+    🌸 Women's Fashion Festival | Up To 70% OFF On Premium Collection
+</div>
 
 <!-- ================= HERO SECTION ================= -->
 
@@ -219,27 +298,35 @@ Women Collection | RoyalCart
         </h1>
 
         <p>
-            Discover elegant dresses, handbags,
-            makeup collections and trendy accessories
-            only on RoyalCart.
+            Discover trendy dresses, stylish handbags,
+            makeup essentials and premium fashion collections
+            designed specially for modern women.
         </p>
 
-        <button class="btn btn-pink">
-            Shop Collection
-        </button>
+        <div class="d-flex gap-3 flex-wrap">
+
+            <button class="btn btn-pink">
+                Shop Now
+            </button>
+
+            <button class="btn-light-custom">
+                Explore Offers
+            </button>
+
+        </div>
 
     </div>
 
 </section>
 
-<!-- ================= COLLECTION SECTION ================= -->
+<!-- ================= CATEGORY SECTION ================= -->
 
 <section>
 
     <div class="row g-4">
 
-        <!-- COLLECTION 1 -->
-        <div class="col-md-4">
+        <!-- CATEGORY 1 -->
+        <div class="col-lg-3 col-md-6">
 
             <div class="collection-box">
 
@@ -250,7 +337,7 @@ Women Collection | RoyalCart
                     <h4>Designer Dresses</h4>
 
                     <p>
-                        Premium dresses for modern women.
+                        Elegant dresses for every occasion.
                     </p>
 
                 </div>
@@ -259,8 +346,8 @@ Women Collection | RoyalCart
 
         </div>
 
-        <!-- COLLECTION 2 -->
-        <div class="col-md-4">
+        <!-- CATEGORY 2 -->
+        <div class="col-lg-3 col-md-6">
 
             <div class="collection-box">
 
@@ -280,8 +367,8 @@ Women Collection | RoyalCart
 
         </div>
 
-        <!-- COLLECTION 3 -->
-        <div class="col-md-4">
+        <!-- CATEGORY 3 -->
+        <div class="col-lg-3 col-md-6">
 
             <div class="collection-box">
 
@@ -289,10 +376,31 @@ Women Collection | RoyalCart
 
                 <div class="collection-content">
 
-                    <h4>Beauty Collection</h4>
+                    <h4>Beauty Products</h4>
 
                     <p>
-                        Makeup and beauty essentials.
+                        Makeup and beauty essentials collection.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CATEGORY 4 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="collection-box">
+
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="collection-content">
+
+                    <h4>Accessories</h4>
+
+                    <p>
+                        Watches, jewellery and premium items.
                     </p>
 
                 </div>
@@ -431,9 +539,9 @@ Women Collection | RoyalCart
 
 </section>
 
-<!-- ================= BEAUTY SECTION ================= -->
+<!-- ================= OFFER SECTION ================= -->
 
-<section class="beauty-section">
+<section class="offer-section">
 
     <div class="row align-items-center">
 
@@ -447,7 +555,7 @@ Women Collection | RoyalCart
         <!-- CONTENT -->
         <div class="col-lg-6">
 
-            <div class="beauty-content">
+            <div class="offer-content">
 
                 <h2>
                     Beauty Meets Fashion
@@ -455,8 +563,8 @@ Women Collection | RoyalCart
 
                 <p>
                     RoyalCart offers premium women's collections,
-                    trendy fashion styles and elegant beauty products
-                    designed specially for modern women.
+                    trending styles and elegant beauty products
+                    specially designed for modern fashion lovers.
                 </p>
 
                 <button class="btn btn-pink">
@@ -468,6 +576,33 @@ Women Collection | RoyalCart
         </div>
 
     </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <h2>
+        Subscribe For Fashion Updates
+    </h2>
+
+    <p>
+        Get latest fashion trends, new arrivals and exclusive offers directly in your inbox.
+    </p>
+
+    <form class="d-flex justify-content-center flex-wrap gap-3">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+        >
+
+        <button class="btn btn-light px-4 fw-bold">
+            Subscribe
+        </button>
+
+    </form>
 
 </section>
 
