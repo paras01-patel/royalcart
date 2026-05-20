@@ -14,3 +14,6 @@ def sign(request):
 
 def man(request):
     return render(request,"man.html")
+
+def women(request):
+    return render(request,"man.html")

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Women Collection | RoyalCart
+Women Fashion | RoyalCart
 {% endblock %}
 
 {% block content %}
@@ -10,15 +10,15 @@ Women Collection | RoyalCart
 <style>
 
     body{
-        background:#fff5f8;
+        background:#fff6fb;
     }
 
     /* ================= HERO ================= */
 
     .women-hero{
         background:
-        linear-gradient(rgba(255,105,180,0.4), rgba(0,0,0,0.4)),
-        url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1600&auto=format&fit=crop');
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1600&auto=format&fit=crop');
 
         background-size:cover;
         background-position:center;
@@ -55,35 +55,36 @@ Women Collection | RoyalCart
 
     .btn-pink:hover{
         background:#d63384;
+        color:white;
     }
 
-    /* ================= COLLECTION SECTION ================= */
+    /* ================= CATEGORY ================= */
 
-    .collection-box{
+    .category-box{
         background:white;
         border-radius:20px;
         overflow:hidden;
-        transition:0.3s;
         box-shadow:0 5px 20px rgba(0,0,0,0.08);
+        transition:0.3s;
         height:100%;
     }
 
-    .collection-box:hover{
+    .category-box:hover{
         transform:translateY(-8px);
     }
 
-    .collection-box img{
+    .category-box img{
         width:100%;
-        height:260px;
+        height:250px;
         object-fit:cover;
     }
 
-    .collection-content{
+    .category-content{
         padding:20px;
         text-align:center;
     }
 
-    .collection-content h4{
+    .category-content h4{
         color:#d63384;
         font-weight:700;
     }
@@ -158,9 +159,9 @@ Women Collection | RoyalCart
         background:#d63384;
     }
 
-    /* ================= BEAUTY SECTION ================= */
+    /* ================= FASHION SECTION ================= */
 
-    .beauty-section{
+    .fashion-section{
         margin-top:90px;
         background:white;
         border-radius:25px;
@@ -168,18 +169,18 @@ Women Collection | RoyalCart
         box-shadow:0 5px 20px rgba(0,0,0,0.08);
     }
 
-    .beauty-section img{
+    .fashion-section img{
         width:100%;
         border-radius:20px;
     }
 
-    .beauty-content h2{
+    .fashion-content h2{
         font-size:50px;
         color:#d63384;
         font-weight:700;
     }
 
-    .beauty-content p{
+    .fashion-content p{
         margin:20px 0;
         color:#555;
         line-height:1.8;
@@ -196,11 +197,11 @@ Women Collection | RoyalCart
             font-size:42px;
         }
 
-        .beauty-section{
+        .fashion-section{
             padding:30px;
         }
 
-        .beauty-content h2{
+        .fashion-content h2{
             font-size:35px;
         }
 
@@ -215,42 +216,41 @@ Women Collection | RoyalCart
     <div>
 
         <h1>
-            Women's Fashion
+            Women's Fashion Collection
         </h1>
 
         <p>
-            Discover elegant dresses, handbags,
-            makeup collections and trendy accessories
-            only on RoyalCart.
+            Discover elegant dresses, handbags, beauty products,
+            heels and trendy fashion accessories only on RoyalCart.
         </p>
 
         <button class="btn btn-pink">
-            Shop Collection
+            Shop Now
         </button>
 
     </div>
 
 </section>
 
-<!-- ================= COLLECTION SECTION ================= -->
+<!-- ================= CATEGORY SECTION ================= -->
 
 <section>
 
     <div class="row g-4">
 
-        <!-- COLLECTION 1 -->
+        <!-- CATEGORY 1 -->
         <div class="col-md-4">
 
-            <div class="collection-box">
+            <div class="category-box">
 
                 <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1200&auto=format&fit=crop">
 
-                <div class="collection-content">
+                <div class="category-content">
 
-                    <h4>Designer Dresses</h4>
+                    <h4>Stylish Dresses</h4>
 
                     <p>
-                        Premium dresses for modern women.
+                        Premium dresses for every occasion.
                     </p>
 
                 </div>
@@ -259,19 +259,19 @@ Women Collection | RoyalCart
 
         </div>
 
-        <!-- COLLECTION 2 -->
+        <!-- CATEGORY 2 -->
         <div class="col-md-4">
 
-            <div class="collection-box">
+            <div class="category-box">
 
                 <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
 
-                <div class="collection-content">
+                <div class="category-content">
 
                     <h4>Luxury Handbags</h4>
 
                     <p>
-                        Stylish handbags and accessories.
+                        Stylish handbags and premium accessories.
                     </p>
 
                 </div>
@@ -280,19 +280,19 @@ Women Collection | RoyalCart
 
         </div>
 
-        <!-- COLLECTION 3 -->
+        <!-- CATEGORY 3 -->
         <div class="col-md-4">
 
-            <div class="collection-box">
+            <div class="category-box">
 
                 <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop">
 
-                <div class="collection-content">
+                <div class="category-content">
 
-                    <h4>Beauty Collection</h4>
+                    <h4>Beauty Products</h4>
 
                     <p>
-                        Makeup and beauty essentials.
+                        Makeup and beauty essentials collection.
                     </p>
 
                 </div>
@@ -308,7 +308,7 @@ Women Collection | RoyalCart
 <!-- ================= PRODUCTS ================= -->
 
 <h2 class="section-title">
-    Trending Women's Products
+    Trending Women's Fashion
 </h2>
 
 <section>
@@ -320,16 +320,16 @@ Women Collection | RoyalCart
 
             <div class="product-card">
 
-                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop">
+                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1200&auto=format&fit=crop">
 
                 <div class="product-content">
 
                     <h4 class="product-title">
-                        Floral Dress
+                        Floral Maxi Dress
                     </h4>
 
                     <div>
-                        <span class="price">₹1999</span>
+                        <span class="price">₹1899</span>
                         <span class="old-price">₹3499</span>
                     </div>
 
@@ -348,7 +348,63 @@ Women Collection | RoyalCart
 
             <div class="product-card">
 
-                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200&auto=format&fit=crop">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="product-content">
+
+                    <h4 class="product-title">
+                        Designer Handbag
+                    </h4>
+
+                    <div>
+                        <span class="price">₹2499</span>
+                        <span class="old-price">₹4599</span>
+                    </div>
+
+                    <button class="btn-cart">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="product-content">
+
+                    <h4 class="product-title">
+                        Party Wear Saree
+                    </h4>
+
+                    <div>
+                        <span class="price">₹3999</span>
+                        <span class="old-price">₹6999</span>
+                    </div>
+
+                    <button class="btn-cart">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop">
 
                 <div class="product-content">
 
@@ -371,7 +427,7 @@ Women Collection | RoyalCart
 
         </div>
 
-        <!-- PRODUCT 3 -->
+        <!-- PRODUCT 5 -->
         <div class="col-lg-3 col-md-6">
 
             <div class="product-card">
@@ -381,12 +437,12 @@ Women Collection | RoyalCart
                 <div class="product-content">
 
                     <h4 class="product-title">
-                        Fashion Heels
+                        Stylish Heels
                     </h4>
 
                     <div>
-                        <span class="price">₹2499</span>
-                        <span class="old-price">₹4499</span>
+                        <span class="price">₹2299</span>
+                        <span class="old-price">₹3999</span>
                     </div>
 
                     <button class="btn-cart">
@@ -399,22 +455,78 @@ Women Collection | RoyalCart
 
         </div>
 
-        <!-- PRODUCT 4 -->
+        <!-- PRODUCT 6 -->
         <div class="col-lg-3 col-md-6">
 
             <div class="product-card">
 
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
+                <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=1200&auto=format&fit=crop">
 
                 <div class="product-content">
 
                     <h4 class="product-title">
-                        Designer Bag
+                        Premium Perfume
+                    </h4>
+
+                    <div>
+                        <span class="price">₹1799</span>
+                        <span class="old-price">₹3499</span>
+                    </div>
+
+                    <button class="btn-cart">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 7 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="product-content">
+
+                    <h4 class="product-title">
+                        Fashion Jacket
                     </h4>
 
                     <div>
                         <span class="price">₹2999</span>
-                        <span class="old-price">₹5999</span>
+                        <span class="old-price">₹5499</span>
+                    </div>
+
+                    <button class="btn-cart">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 8 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="product-content">
+
+                    <h4 class="product-title">
+                        Beauty Combo Kit
+                    </h4>
+
+                    <div>
+                        <span class="price">₹1999</span>
+                        <span class="old-price">₹3999</span>
                     </div>
 
                     <button class="btn-cart">
@@ -431,32 +543,32 @@ Women Collection | RoyalCart
 
 </section>
 
-<!-- ================= BEAUTY SECTION ================= -->
+<!-- ================= FASHION SECTION ================= -->
 
-<section class="beauty-section">
+<section class="fashion-section">
 
     <div class="row align-items-center">
 
         <!-- IMAGE -->
         <div class="col-lg-6 mb-4">
 
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1400&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1400&auto=format&fit=crop">
 
         </div>
 
         <!-- CONTENT -->
         <div class="col-lg-6">
 
-            <div class="beauty-content">
+            <div class="fashion-content">
 
                 <h2>
-                    Beauty Meets Fashion
+                    Style That Defines You
                 </h2>
 
                 <p>
-                    RoyalCart offers premium women's collections,
-                    trendy fashion styles and elegant beauty products
-                    designed specially for modern women.
+                    RoyalCart brings premium women's fashion,
+                    luxury accessories and trending beauty collections
+                    to make every woman look confident and elegant.
                 </p>
 
                 <button class="btn btn-pink">
